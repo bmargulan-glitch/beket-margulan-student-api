@@ -1,6 +1,6 @@
 # beket-margulan-student-api
 
-Spring Boot CRUD API for students, with PostgreSQL, Docker Compose and a Jenkins pipeline.
+Spring Boot CRUD API for students — main branch: runs with Docker Compose and Jenkins.
 
 Author: Beket Margulan, group it2-2302, student ID 38109
 
