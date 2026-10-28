@@ -25,3 +25,8 @@ docker compose up -d --build
 ```
 
 Docker image: `beket-margulan-student-api:v1.0-beket-margulan-38109`
+
+## Change log
+
+- Beket Margulan: the create operation now trims first/last name and stores the email in lower case,
+  so "Margulan.Beket@IITU.edu.kz" and "margulan.beket@iitu.edu.kz" count as the same student.
