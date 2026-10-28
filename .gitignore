@@ -1,0 +1,21 @@
+# Gradle / build output
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+out/
+
+# macOS
+.DS_Store
+
+# Secrets — never commit
+.env
+*.pem
+*.key
+
+# Runtime logs (the system report log is created locally)
+logs/*.log
