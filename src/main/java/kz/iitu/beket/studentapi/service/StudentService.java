@@ -25,6 +25,7 @@ public class StudentService {
     }
 
     public Student create(Student student) {
+        normalize(student);
         if (repository.existsByEmail(student.getEmail())) {
             throw new IllegalArgumentException("Student with email " + student.getEmail() + " already exists");
         }
@@ -44,5 +45,12 @@ public class StudentService {
     public void delete(Long id) {
         Student existing = findById(id);
         repository.delete(existing);
+    }
+
+    // Added by Beket Margulan: clean input before saving
+    private void normalize(Student student) {
+        student.setFirstName(student.getFirstName().trim());
+        student.setLastName(student.getLastName().trim());
+        student.setEmail(student.getEmail().trim().toLowerCase());
     }
 }
