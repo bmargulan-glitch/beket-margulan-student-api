@@ -103,6 +103,6 @@ class StudentControllerTest {
     void infoShowsStudentName() throws Exception {
         mvc.perform(get("/api/beket-margulan/info"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.student").value("Wrong Name"));
+                .andExpect(jsonPath("$.student").value("Beket Margulan"));
     }
 }
