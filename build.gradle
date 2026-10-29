@@ -6,7 +6,7 @@ plugins {
 
 group = 'kz.iitu.beket'
 // Application version (Task 3.3: change it, then rebuild the image)
-version = '1.0.0'
+version = '1.1.0'
 description = 'Student API by Beket Margulan (it2-2302, ID 38109)'
 
 java {
